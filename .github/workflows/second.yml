@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello there
-        run: echo "Hi there"
+        run: |
+            echo "Hello There"
+            echo "How are you?"
