@@ -1,0 +1,9 @@
+name: Second Job
+on:
+  workflow_dispatch:
+jobs:
+  second_flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello there
+        run: echo "Hi there"
