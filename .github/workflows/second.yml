@@ -12,5 +12,5 @@ jobs:
       - name: runing curl command
         run: | 
             df -h
-            curl -i http://localhost
+            curl -i 127.0.0.1
             
