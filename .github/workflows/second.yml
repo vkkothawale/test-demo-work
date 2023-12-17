@@ -9,3 +9,8 @@ jobs:
         run: |
             echo "Hello There"
             echo "How are you?"
+      - name: runing curl command
+        run: | 
+            df -h
+            curl -i http://localhost:8000
+            
