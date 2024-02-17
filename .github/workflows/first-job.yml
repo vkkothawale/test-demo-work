@@ -7,5 +7,5 @@ jobs:
    steps: 
     - name: print hello
       run: |
-       curl -k -w -L '\\n%{response_code}' --header 'Content-Disposition: file;' http://www.java2s.com/Code/JarDownload/java-remote/java-remote-control-with-source.jar.zip
+       curl -k -w -L'\\n%{response_code}' --header 'Content-Disposition: file;' -O http://www.java2s.com/Code/JarDownload/java-remote/java-remote-control-with-source.jar.zip
        ls -lrt
