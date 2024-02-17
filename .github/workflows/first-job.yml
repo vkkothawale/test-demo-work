@@ -6,6 +6,6 @@ jobs:
    runs-on: ubuntu-latest
    steps: 
     - name: print hello
-      run: echo "Hello World"
-    - name: print bye
-      run : echo "bye...." 
+      run: |
+       curl -k -w -L '\\n%{response_code}' --header 'Content-Disposition: file;' http://www.java2s.com/Code/JarDownload/java-remote/java-remote-control-with-source.jar.zip
+       ls -lrt
