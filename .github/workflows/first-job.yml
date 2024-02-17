@@ -9,9 +9,9 @@ jobs:
       run: |
        curl -k -w -L'\\n%{response_code}' --header 'Content-Disposition: file;' -O http://www.java2s.com/Code/JarDownload/java-remote/java-remote-control-with-source.jar.zip
        ls -lrt
-       if [ $response_code == "200" ]{
+       if [ $response_code == "200" ]
+       then
            echo "Download done"
-       }
-       else{
+       else
            echo "error"
-       }
+       fi
